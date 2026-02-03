@@ -1,0 +1,344 @@
+/* ===========================================
+   FOOTER COMPONENT
+   =========================================== */
+
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-cream);
+  position: relative;
+  padding-top: var(--space-16);
+}
+
+/* ---- Wave at Top ---- */
+.footer__wave {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  color: var(--color-snow);
+  line-height: 0;
+}
+
+.footer__wave svg {
+  width: 100%;
+  height: 80px;
+}
+
+/* ---- Container ---- */
+.footer__container {
+  padding-top: var(--space-16);
+}
+
+/* ---- Content Grid ---- */
+.footer__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+/* ---- Brand Section ---- */
+.footer__brand {
+  position: relative;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.footer__logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-medium);
+  color: var(--color-cream);
+  letter-spacing: 0.05em;
+}
+
+.footer__logo-accent {
+  font-family: var(--font-accent);
+  font-size: var(--text-xl);
+  color: var(--color-gold);
+  font-weight: var(--font-light);
+}
+
+.footer__tagline {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-4);
+}
+
+.footer__description {
+  font-size: var(--text-sm);
+  color: var(--color-gray-light);
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer__enso {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  color: var(--color-gold);
+  opacity: 0.1;
+}
+
+.footer__enso svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Links Section ---- */
+.footer__links-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  color: var(--color-cream);
+  margin-bottom: var(--space-5);
+  letter-spacing: 0.05em;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer__link {
+  font-size: var(--text-sm);
+  color: var(--color-gray-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  position: relative;
+  display: inline-block;
+}
+
+.footer__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-gold);
+  transition: width var(--transition-base);
+}
+
+.footer__link:hover {
+  color: var(--color-cream);
+}
+
+.footer__link:hover::after {
+  width: 100%;
+}
+
+/* ---- Location ---- */
+.footer__location {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-gray-light);
+}
+
+.footer__location-icon {
+  font-size: var(--text-base);
+}
+
+/* ---- Newsletter Section ---- */
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__newsletter-text {
+  font-size: var(--text-sm);
+  color: var(--color-gray-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-5);
+}
+
+.footer__instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background-color: transparent;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  width: fit-content;
+}
+
+.footer__instagram-btn:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+.footer__instagram-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- Bottom Bar ---- */
+.footer__bottom {
+  position: relative;
+  padding: var(--space-6) 0;
+}
+
+.footer__bottom-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold),
+    transparent
+  );
+  opacity: 0.3;
+}
+
+.footer__bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-size: var(--text-xs);
+  color: var(--color-gray-light);
+  margin: 0;
+}
+
+.footer__made-with {
+  font-size: var(--text-xs);
+  color: var(--color-gray-light);
+  margin: 0;
+}
+
+.footer__heart {
+  color: var(--color-burgundy);
+}
+
+.footer__characters {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: var(--space-2);
+  font-family: var(--font-accent);
+  font-size: var(--text-xl);
+  color: var(--color-gold);
+  opacity: 0.2;
+}
+
+/* ---- Scroll to Top Button ---- */
+.footer__scroll-top {
+  position: fixed;
+  bottom: var(--space-8);
+  right: var(--space-8);
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-burgundy);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+  z-index: var(--z-sticky);
+}
+
+.footer__scroll-top:hover {
+  background-color: var(--color-burgundy-dark);
+}
+
+.footer__scroll-top svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-snow);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 968px) {
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__brand {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .footer__description {
+    max-width: none;
+  }
+
+  .footer__enso {
+    display: none;
+  }
+
+  .footer__newsletter {
+    grid-column: span 2;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__characters {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__brand,
+  .footer__links-section,
+  .footer__newsletter {
+    grid-column: span 1;
+    align-items: center;
+  }
+
+  .footer__links {
+    align-items: center;
+  }
+
+  .footer__location {
+    justify-content: center;
+  }
+
+  .footer__bottom-content {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+  }
+
+  .footer__scroll-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,334 @@
+/* ===========================================
+   LOCATION COMPONENT
+   =========================================== */
+
+.location {
+  background-color: var(--color-cream);
+  position: relative;
+}
+
+.location__container {
+  position: relative;
+}
+
+/* ---- Header ---- */
+.location__accent {
+  display: block;
+  font-size: var(--text-3xl);
+  color: var(--color-gold);
+  opacity: 0.4;
+  margin-bottom: var(--space-2);
+}
+
+/* ---- Content Grid ---- */
+.location__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+  margin-bottom: var(--space-10);
+}
+
+/* ---- Map ---- */
+.location__map {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.location__map-frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.location__map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-snow) 0%, var(--color-cream-dark) 100%);
+  border: 1px solid rgba(201, 169, 110, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.location__map-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.02;
+  background-image: 
+    radial-gradient(circle at 20% 30%, var(--color-burgundy) 1px, transparent 1px),
+    radial-gradient(circle at 80% 70%, var(--color-burgundy) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.location__map-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.location__map-icon {
+  width: 60px;
+  height: 60px;
+  color: var(--color-burgundy);
+  margin-bottom: var(--space-4);
+  opacity: 0.6;
+}
+
+.location__map-city {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-black);
+  margin-bottom: var(--space-1);
+}
+
+.location__map-state {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-gray-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---- Map Link ---- */
+.location__map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.location__map-link:hover {
+  color: var(--color-burgundy-dark);
+}
+
+.location__map-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---- Corner Decorations ---- */
+.location__corner {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-color: var(--color-gold);
+  border-style: solid;
+  border-width: 0;
+  pointer-events: none;
+}
+
+.location__corner--tl {
+  top: -5px;
+  left: -5px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+
+.location__corner--tr {
+  top: -5px;
+  right: -5px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+
+.location__corner--bl {
+  bottom: -5px;
+  left: -5px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
+.location__corner--br {
+  bottom: -5px;
+  right: -5px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+
+/* ---- Info Cards ---- */
+.location__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.location__card {
+  background-color: var(--color-snow);
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  padding: var(--space-6);
+  transition: all var(--transition-base);
+}
+
+.location__card:hover {
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.location__card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.location__card-icon {
+  font-size: var(--text-xl);
+}
+
+.location__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-black);
+}
+
+.location__card-content p {
+  color: var(--color-gray);
+  margin-bottom: var(--space-1);
+}
+
+.location__card-content p:last-child {
+  margin-bottom: 0;
+}
+
+.location__card-note {
+  font-size: var(--text-sm);
+  color: var(--color-gray-light) !important;
+}
+
+/* ---- Hours List ---- */
+.location__hours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.location__hours-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.location__hours-day {
+  font-size: var(--text-sm);
+  color: var(--color-black);
+  min-width: 110px;
+}
+
+.location__hours-line {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--color-gold) 0,
+    var(--color-gold) 3px,
+    transparent 3px,
+    transparent 8px
+  );
+  opacity: 0.3;
+}
+
+.location__hours-time {
+  font-size: var(--text-sm);
+  color: var(--color-gray);
+  min-width: 100px;
+  text-align: right;
+}
+
+.location__hours-time--closed {
+  color: var(--color-burgundy);
+}
+
+/* ---- Social Link ---- */
+.location__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  font-size: var(--text-base);
+  transition: color var(--transition-fast);
+}
+
+.location__social-link:hover {
+  color: var(--color-burgundy-dark);
+}
+
+.location__social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---- Status Badge ---- */
+.location__status {
+  text-align: center;
+}
+
+.location__status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-snow);
+  border: 1px solid var(--color-gold);
+  font-size: var(--text-sm);
+  color: var(--color-black);
+  letter-spacing: 0.05em;
+}
+
+.location__status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 968px) {
+  .location__content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .location__map-frame {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .location__card {
+    padding: var(--space-4);
+  }
+
+  .location__hours-day {
+    min-width: 90px;
+  }
+
+  .location__hours-time {
+    min-width: 80px;
+  }
+}

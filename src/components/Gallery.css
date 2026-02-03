@@ -1,0 +1,288 @@
+/* ===========================================
+   GALLERY COMPONENT
+   =========================================== */
+
+.gallery {
+  background-color: var(--color-snow);
+  position: relative;
+}
+
+.gallery__container {
+  position: relative;
+}
+
+/* ---- Header ---- */
+.gallery__accent {
+  display: block;
+  font-size: var(--text-3xl);
+  color: var(--color-gold);
+  opacity: 0.4;
+  margin-bottom: var(--space-2);
+}
+
+/* ---- Asymmetric Grid ---- */
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+/* ---- Item Sizes ---- */
+.gallery__item--large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__item--medium {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.gallery__item--small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* ---- Item ---- */
+.gallery__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery__item-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  transition: all var(--transition-base);
+}
+
+.gallery__item:hover .gallery__item-inner {
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery__item:hover .gallery__item-overlay {
+  opacity: 1;
+}
+
+.gallery__item:hover .gallery__item-character {
+  transform: scale(1.2) rotate(5deg);
+  opacity: 0.2;
+}
+
+.gallery__item:hover .gallery__corner {
+  width: 40px;
+  height: 40px;
+}
+
+.gallery__item:hover .gallery__item-line {
+  width: 40px;
+}
+
+/* ---- Item Background ---- */
+.gallery__item-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery__item-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.02;
+  background-image: 
+    linear-gradient(45deg, var(--color-burgundy) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--color-burgundy) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--color-burgundy) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--color-burgundy) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.gallery__item-character {
+  font-family: var(--font-accent);
+  color: var(--color-burgundy);
+  opacity: 0.1;
+  transition: all var(--transition-slow);
+}
+
+.gallery__item--large .gallery__item-character {
+  font-size: 150px;
+}
+
+.gallery__item--medium .gallery__item-character {
+  font-size: 80px;
+}
+
+.gallery__item--small .gallery__item-character {
+  font-size: 60px;
+}
+
+/* ---- Item Overlay ---- */
+.gallery__item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-5);
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.8), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.gallery__item-category {
+  font-size: var(--text-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.gallery__item-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-snow);
+  font-weight: var(--font-normal);
+}
+
+.gallery__item-line {
+  width: 0;
+  height: 1px;
+  background-color: var(--color-gold);
+  margin-top: var(--space-2);
+  transition: width var(--transition-base);
+}
+
+/* ---- Corner Accents ---- */
+.gallery__corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: var(--color-gold);
+  border-style: solid;
+  border-width: 0;
+  opacity: 0.5;
+  transition: all var(--transition-base);
+  pointer-events: none;
+}
+
+.gallery__corner--tl {
+  top: var(--space-3);
+  left: var(--space-3);
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+
+.gallery__corner--br {
+  bottom: var(--space-3);
+  right: var(--space-3);
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+
+/* ---- Instagram CTA ---- */
+.gallery__instagram {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.gallery__instagram-text {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-gray);
+  margin-bottom: 0;
+}
+
+.gallery__instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid var(--color-burgundy);
+  transition: all var(--transition-base);
+}
+
+.gallery__instagram-link:hover {
+  background-color: var(--color-burgundy);
+  color: var(--color-snow);
+}
+
+.gallery__instagram-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 968px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+
+  .gallery__item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gallery__item--medium {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery__item--large .gallery__item-character {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    gap: var(--space-3);
+  }
+
+  .gallery__item--large,
+  .gallery__item--medium {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery__item--large:first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .gallery__item--large .gallery__item-character,
+  .gallery__item--medium .gallery__item-character,
+  .gallery__item--small .gallery__item-character {
+    font-size: 50px;
+  }
+
+  .gallery__item-overlay {
+    padding: var(--space-3);
+  }
+
+  .gallery__item-title {
+    font-size: var(--text-base);
+  }
+}
