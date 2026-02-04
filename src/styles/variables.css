@@ -4,21 +4,29 @@
 
 :root {
   /* ---- Primary Colors ---- */
-  --color-burgundy: #8B2332;
-  --color-burgundy-dark: #6d1a27;
-  --color-burgundy-light: #a83344;
+  --color-burgundy: #93221A;
+  --color-burgundy-dark: #7a1c15;
+  --color-burgundy-light: #a83a32;
+  
+  /* ---- Green Palette ---- */
+  --color-green-olive: #58612A;
+  --color-green-lime: #CFD166;
+  --color-green-forest: #344A33;
+  --color-green-sage: #859469;
   
   /* ---- Neutral Colors ---- */
-  --color-cream: #F5E6D3;
-  --color-cream-dark: #E8D4BD;
-  --color-snow: #FAFAF8;
+  --color-cream: #FBF4EA;
+  --color-cream-dark: #CFCDA7;
+  --color-snow: #FBF4EA;
   --color-black: #1A1A1A;
-  --color-gray: #4A4A4A;
-  --color-gray-light: #8A8A8A;
+  --color-gray: #344A33;
+  --color-gray-light: #859469;
+  --color-gray-dark: #344A33;
   
   /* ---- Accent Colors ---- */
-  --color-gold: #C9A96E;
-  --color-gold-light: #D9C08E;
+  --color-gold: #CFD166;
+  --color-gold-light: #D59383;
+  --color-coral: #D59383;
   
   /* ---- Typography ---- */
   --font-heading: 'Cormorant Garamond', Georgia, serif;

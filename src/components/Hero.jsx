@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import './Hero.css';
+import logoNabi from '../assets/logo-nabi.png';
 
 const Hero = () => {
   const scrollToMenu = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
       {/* Background Pattern */}
       <div className="hero__pattern"></div>
       
-      {/* Decorative Elements */}
+      {/* Decorative Leaves */}
       <motion.div 
         className="hero__decoration hero__decoration--left"
         initial={{ opacity: 0, x: -50 }}
@@ -40,23 +41,18 @@ const Hero = () => {
       </motion.div>
 
       <div className="hero__container">
-        {/* Logo */}
+        {/* Logo PNG */}
         <motion.div 
           className="hero__logo"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <div className="hero__logo-circle">
-            <span className="hero__logo-na">NA</span>
-            <span className="hero__logo-bi">BI</span>
-            <div className="hero__logo-tagline">
-              <span>SPECIAL</span>
-              <span>ASIAN</span>
-              <span>COFFEE</span>
-              <span>SHOP</span>
-            </div>
-          </div>
+          <img 
+            src={logoNabi} 
+            alt="Nabi Café - Special Asian Coffee Shop" 
+            className="hero__logo-img"
+          />
         </motion.div>
 
         {/* Main Content */}
@@ -66,12 +62,6 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          <h1 className="hero__title">
-            nabi
-            <span className="hero__title-accent">・</span>
-            special asian coffee shop
-          </h1>
-          
           <p className="hero__subtitle">
             cafeteria com influência asiática
           </p>

@@ -241,7 +241,7 @@ input, textarea, select {
 /* ---- Card Base ---- */
 .card {
   background-color: var(--color-snow);
-  border: 1px solid rgba(201, 169, 110, 0.2);
+  border: 1px solid rgba(133, 148, 105, 0.2);
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: all var(--transition-base);
