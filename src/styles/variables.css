@@ -8,23 +8,23 @@
   --color-burgundy-dark: #7a1c15;
   --color-burgundy-light: #a83a32;
   
-  /* ---- Green Palette ---- */
-  --color-green-olive: #58612A;
-  --color-green-lime: #CFD166;
+  /* ---- Green Palette (agora com tons de bege) ---- */
+  --color-green-olive: #CFCDA7;
+  --color-green-lime: #F5F3EA;
   --color-green-forest: #344A33;
-  --color-green-sage: #859469;
+  --color-green-sage: #E8E5D4;
   
-  /* ---- Neutral Colors ---- */
-  --color-cream: #E8E5D4;
-  --color-cream-dark: #CFCDA7;
-  --color-snow: #F5F3EA;
+  /* ---- Neutral Colors (agora com tons de verde) ---- */
+  --color-cream: #859469;
+  --color-cream-dark: #58612A;
+  --color-snow: #CFD166;
   --color-black: #1A1A1A;
-  --color-gray: #344A33;
-  --color-gray-light: #859469;
+  --color-gray: #8A8A7A;
+  --color-gray-light: #B5B3A3;
   --color-gray-dark: #344A33;
   
   /* ---- Accent Colors ---- */
-  --color-gold: #CFD166;
+  --color-gold: #E8E5D4;
   --color-gold-light: #D59383;
   --color-coral: #D59383;
   
