@@ -71,10 +71,10 @@
 }
 
 .hero__logo-img {
-  max-width: 320px;
+  max-width: 300px;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 4px 20px rgba(52, 74, 51, 0.1));
+  filter: drop-shadow(0 2px 8px rgba(52, 74, 51, 0.08));
 }
 
 /* ---- Content ---- */
