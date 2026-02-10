@@ -41,9 +41,7 @@
   height: 32px;
   width: auto;
   display: block;
-  background: transparent;
-  mix-blend-mode: multiply;
-  filter: brightness(1) contrast(1.1);
+  mix-blend-mode: darken;
 }
 
 .navbar__logo-accent {
