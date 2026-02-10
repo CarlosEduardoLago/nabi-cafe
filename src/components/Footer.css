@@ -61,12 +61,17 @@
   display: block;
   width: 88px;
   height: 32px;
-  background-image: url('../assets/nabi-text.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
-  filter: invert(1);
-  mix-blend-mode: screen;
+  background-color: var(--color-burgundy);
+  -webkit-mask-image: linear-gradient(white, white), url('../assets/nabi-text.png');
+  mask-image: linear-gradient(white, white), url('../assets/nabi-text.png');
+  -webkit-mask-size: contain, contain;
+  mask-size: contain, contain;
+  -webkit-mask-repeat: no-repeat, no-repeat;
+  mask-repeat: no-repeat, no-repeat;
+  -webkit-mask-position: left center, left center;
+  mask-position: left center, left center;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .footer__logo-accent {
