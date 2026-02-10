@@ -33,7 +33,7 @@
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 0px;
   text-decoration: none;
 }
 
