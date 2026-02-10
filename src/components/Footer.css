@@ -45,7 +45,7 @@
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 0.35em;
   margin-bottom: var(--space-3);
 }
 
@@ -53,14 +53,15 @@
   font-family: var(--font-logo);
   font-size: var(--text-3xl);
   font-weight: var(--font-medium);
-  color: var(--color-cream);
-  letter-spacing: 0.05em;
+  color: var(--color-logo-nabi);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
 }
 
 .footer__logo-accent {
   font-family: var(--font-accent);
   font-size: var(--text-xl);
-  color: var(--color-gold);
+  color: var(--color-logo-accent);
   font-weight: var(--font-light);
 }
 
