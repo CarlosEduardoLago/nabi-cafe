@@ -38,10 +38,15 @@
 }
 
 .navbar__logo-img {
-  height: 32px;
-  width: auto;
   display: block;
-  mix-blend-mode: darken;
+  width: 130px;
+  height: 32px;
+  background-image: url('../assets/nabi-text.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-cream);
+  background-blend-mode: multiply;
 }
 
 .navbar__logo-accent {
@@ -134,6 +139,7 @@
 /* ---- Mobile Styles ---- */
 @media (max-width: 768px) {
   .navbar__logo-img {
+    width: 100px;
     height: 26px;
   }
 
