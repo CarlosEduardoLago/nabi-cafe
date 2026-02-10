@@ -45,23 +45,22 @@
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: 0.35em;
+  gap: var(--space-2);
   margin-bottom: var(--space-3);
 }
 
 .footer__logo-text {
-  font-family: var(--font-logo);
+  font-family: var(--font-heading);
   font-size: var(--text-3xl);
   font-weight: var(--font-medium);
-  color: var(--color-logo-nabi);
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
+  color: var(--color-cream);
+  letter-spacing: 0.05em;
 }
 
 .footer__logo-accent {
   font-family: var(--font-accent);
   font-size: var(--text-xl);
-  color: var(--color-logo-accent);
+  color: var(--color-gold);
   font-weight: var(--font-light);
 }
 
