@@ -38,10 +38,12 @@
 }
 
 .navbar__logo-img {
-  height: 20px;
+  height: 32px;
   width: auto;
   display: block;
+  background: transparent;
   mix-blend-mode: multiply;
+  filter: brightness(1) contrast(1.1);
 }
 
 .navbar__logo-accent {
@@ -134,7 +136,7 @@
 /* ---- Mobile Styles ---- */
 @media (max-width: 768px) {
   .navbar__logo-img {
-    height: 16px;
+    height: 26px;
   }
 
   .navbar__toggle {
