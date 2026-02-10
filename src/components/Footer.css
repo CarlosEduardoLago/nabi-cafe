@@ -65,8 +65,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
-  background-color: var(--color-cream);
+  background-color: var(--color-black);
   background-blend-mode: multiply;
+  filter: brightness(0) invert(1);
 }
 
 .footer__logo-accent {
