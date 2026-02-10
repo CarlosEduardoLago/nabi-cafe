@@ -39,12 +39,12 @@
 
 .navbar__logo-img {
   display: block;
-  width: 130px;
+  width: 88px;
   height: 32px;
   background-image: url('../assets/nabi-text.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   background-color: var(--color-cream);
   background-blend-mode: multiply;
 }
@@ -139,7 +139,7 @@
 /* ---- Mobile Styles ---- */
 @media (max-width: 768px) {
   .navbar__logo-img {
-    width: 100px;
+    width: 72px;
     height: 26px;
   }
 
