@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <span className="footer__logo-img" role="img" aria-label="Nabi"></span>
+              <span className="footer__logo-text">Nabi</span>
               <span className="footer__logo-accent">蝶</span>
             </div>
             <p className="footer__tagline">

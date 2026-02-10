@@ -50,28 +50,11 @@
 }
 
 .footer__logo-text {
-  font-family: var(--font-heading);
+  font-family: var(--font-logo);
   font-size: var(--text-3xl);
   font-weight: var(--font-medium);
   color: var(--color-cream);
   letter-spacing: 0.05em;
-}
-
-.footer__logo-img {
-  display: block;
-  width: 88px;
-  height: 32px;
-  background-color: var(--color-burgundy);
-  -webkit-mask-image: linear-gradient(white, white), url('../assets/nabi-text.png');
-  mask-image: linear-gradient(white, white), url('../assets/nabi-text.png');
-  -webkit-mask-size: contain, contain;
-  mask-size: contain, contain;
-  -webkit-mask-repeat: no-repeat, no-repeat;
-  mask-repeat: no-repeat, no-repeat;
-  -webkit-mask-position: left center, left center;
-  mask-position: left center, left center;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
 }
 
 .footer__logo-accent {
@@ -326,11 +309,6 @@
 }
 
 @media (max-width: 640px) {
-  .footer__logo-img {
-    width: 72px;
-    height: 26px;
-  }
-
   .footer__content {
     grid-template-columns: 1fr;
     text-align: center;

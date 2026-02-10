@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       <div className="navbar__container">
         <a href="#home" className="navbar__logo" onClick={(e) => handleNavClick(e, '#home')}>
-          <span className="navbar__logo-img" role="img" aria-label="Nabi"></span>
+          <span className="navbar__logo-text">Nabi</span>
           <span className="navbar__logo-accent">蝶</span>
         </a>
 

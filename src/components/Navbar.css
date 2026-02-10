@@ -37,16 +37,13 @@
   text-decoration: none;
 }
 
-.navbar__logo-img {
-  display: block;
-  width: 88px;
-  height: 32px;
-  background-image: url('../assets/nabi-text.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-color: var(--color-cream);
-  background-blend-mode: multiply;
+.navbar__logo-text {
+  font-family: var(--font-logo);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-normal);
+  color: var(--color-burgundy);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
 }
 
 .navbar__logo-accent {
@@ -138,11 +135,6 @@
 
 /* ---- Mobile Styles ---- */
 @media (max-width: 768px) {
-  .navbar__logo-img {
-    width: 72px;
-    height: 26px;
-  }
-
   .navbar__toggle {
     display: flex;
   }
