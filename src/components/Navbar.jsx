@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Navbar.css';
+import nabiLogo from '../assets/nabi-text.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +43,7 @@ const Navbar = () => {
     >
       <div className="navbar__container">
         <a href="#home" className="navbar__logo" onClick={(e) => handleNavClick(e, '#home')}>
-          <span className="navbar__logo-text">Nabi</span>
+          <img src={nabiLogo} alt="Nabi" className="navbar__logo-img" />
           <span className="navbar__logo-accent">蝶</span>
         </a>
 
