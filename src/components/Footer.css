@@ -65,7 +65,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
-  filter: invert(1) sepia(1) saturate(0) hue-rotate(180deg);
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .footer__logo-accent {
